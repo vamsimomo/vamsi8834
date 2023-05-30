@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% extends 'testapp/demo.html' %}
+{% block body_block %}
+<style>
+    .grid-container {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 10px;
+    }
+    .grid-item {
+        background-color: rgb(29, 28, 26);
+        padding: 10px;
+    }
+    h1{
+        text-align: center;
+        background-color: rgb(124, 134, 124);
+    }
+</style>
+<div style="background-color: rgb(150, 156, 150);" class="container">
+        <nav class="navbar navbar-expand-lg"  style="background-color: rgb(248, 243, 239);" >
+            <a href=""><button style="margin-right: 20px;" type="button" class="btn btn-primary">DROP CV</button></a>
+            <button style="margin-right: 20px;" type="button" class="btn btn-success">APPLY NOW  </button>
+            <button style="margin-right: 20px;" type="button" class="btn btn-warning">CURRENT OPENINGS</button>
+        </nav>
+    </div>
+    <h1 style="color: rgb(58, 11, 40);">career @lpu</h1>
+    <p style="background-color: rgb(222, 231, 213);">4500+ staff members. <br>
+        Diversity- Staff from all the states of India. <br>
+        Faculty from top Institutions of India and abroad.
+        Pay Scale at par with the best in the sector.
+        International Tie ups with 40+ foreign Universities for Faculty exchange.
+        Excellent Teaching, Learning and Research Environment.
+        Immense opportunities to learn and grow faster than your colleagues working elsewhere.
+        Opportunities for the staff to take up responsibilities in various roles early in their careers to groom them as potential leaders at various levels.
+        Mediclaim Insurance/Accidental Insurance/ESI Benefits for staff
+        Travel Grants for National and International conferences.
+        Incentives for publishing in indexed journals such as Scopus/WoS.
+        Incentives on Funded Projects.
+        Incentives for Patents.
+        Special Incentives on Interdisciplinary and Multidisciplinary Research.
+        Support for IPR filing and Commercialization.
+        Revenue sharing on Consultancy Projects.
+        Provision for Post Doc Fellowships.
+        Seed money for initiation of research work.
+        Multidisciplinary Project Grants.
+        Research appreciation awards including international visits.
+        </p>
+        <h1 style="color: blueviolet;" >INSIGHT INTO HUMAN RESOURCE</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h1 style="color: rgb(245, 234, 234);">TUITION FEE WAIVER </h1>
+                    <p style="background-color: azure;"> 50% tuition fee waiver to staff members for self-study and 25% tuition fee waiver for their dependents to persue regular, part time courses at LPU. The waiver is also available for IT/Management programmes offered in distance education mode. <br>LPU offers a special scholarship scheme of full Programme fee waiver to Top 20 Rank holders of every Recognized School Board .</p>
+            </div>
+            <div class="grid-item">
+                <h1 style="color: rgb(218, 221, 210);">HEALTH CARE </h1>
+                    <p style="background-color: azure;"> A fully equipped on campus hospital, staffed with well qualified doctors, nurses, lab technicians, physiotherapists , provides healthcare services to the University residents. <br>The university provides a state-of-the-art gymnasium with world class fitness equipment from Cybex, USA and specialized spaces for yoga training, cardio and weight training along with steam and sauna rooms.
+                    <br>24 HOURS HELPLINE
+                    +91-1824-501227</p>
+            </div>
+            <div class="grid-item">
+                <h1 style="color: rgb(218, 221, 210);">SECURITY AND SAFETY  </h1>
+                    <p style="background-color: azure;">Manned by over 400 full time security officials, thousands of security cameras, LPU is one of the safest campuses in the world. Our security team includes experienced ex-military men and women. <br>
+                        LPU has Zero tolerance towards drugs & alcohol. A dedicated & expert department of security officials and personnel are on duty 24 x 7 to ensure that no drug ever enters the campus. </p>
+            </div>
+</div>
+<a href="/home">
+    <button type="button" class="btn btn-success">Home Page</button>
+</a>
+{% endblock %}

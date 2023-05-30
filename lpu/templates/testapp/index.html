@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'testapp/demo.html' %}
+{% block body_block %}
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static  'css/index.css' %}">
+</head>
+<div class=" bg-container" >
+    <div>
+        
+        <div style="position: relative;">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-9e5303d21b8aff39b8305d75eb33b5eb-lq" alt="Image" height="550" width="1370">
+            <div style="position: absolute; bottom: 0; left: 0; background-color: rgba(7, 46, 53, 0.397); color:darkslategray; padding: 6px;">
+                <h1 color="blue">LPU
+                <P>A Campus
+            To Fall in LOVE with 
+                    </P>
+                    <a href="/accounts/login">
+                    <button type="button" class="btn btn-success">Log in For Demo</button>
+                </a>
+                </h1>
+            </div>
+          </div>    
+    </div>
+</div>
+{% endblock %}

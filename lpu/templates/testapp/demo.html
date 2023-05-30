@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <style>
+        nav{
+            background-color: black; 
+        }
+        nav a{
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <nav   class="navbar navbar-expand-lg  >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a  class="nav-link" href="/insidehome">Home <span class="sr-only"></span></a>
+                </ul>
+            <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+               <a class="nav-link" href="/login">Admissions <span class="sr-only"></span></a>
+            </ul>
+             <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/sports">sports <span class="sr-only"></span></a>
+            </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/recuiretersdata">Top Requirters <span class="sr-only"></span></a>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/CareerSupport">Career Support <span class="sr-only"></span></a>
+               </ul>
+                <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                 <a class="nav-link" href="/PROGRAMMES">PROGRAMMES <span class="sr-only"></span></a>
+               </ul>
+               <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="">sign up <span class="sr-only"></span></a>
+                </ul>
+             <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                 <a class="nav-link" href="/accounts/login">Login <span class="sr-only"></span></a>
+               </ul>
+               <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/highlites">Highlites <span class="sr-only"></span></a>
+                </ul>
+              
+        </nav>
+
+        {% block body_block %}
+        {% endblock %}
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends 'testapp/demo.html' %}
+{% block body_block %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+</head>
+<body  style="background-color: darkorange;">
+    <div align="center">
+<form method="POST" style="color: rgb(40, 38, 43);">
+    {% csrf_token %}
+    {{form_as.p}}
+  <label for="name">name:</label><br>
+  <input type="text" id="name" name="name" value=""><br>
+  <label for="email">email:</label><br>
+  <input type="email" id="email" name="email" value=""><br><br>
+  <label for="mobile">mobile number:</label><br>
+  <input type="mobile" id="mobile" name="mobile" value=""><br>
+  <label for="course">course:</label><br>
+  <input type="course" id="course" name="course" value=""><br><br>
+  <label for="select_programme">select_programme:</label><br>
+  <input type="select_programme" id="select_programme" name="select_programme" value=""><br><br>
+  <a href="/afterregistration">
+    <button type="button" class="btn btn-success">Submit</button><span></span></a>
+    <input type="reset">
+  <h1>Register For Regular Updates</h1>
+  <a href="/home">
+    <button type="button" class="btn btn-success">Home Page</button><span></span>
+    <a href="https://api.whatsapp.com/send?phone=8113826889"><button type="button" class="btn btn-info">WhatsApp</button></a><span></span>
+    <a href="tel:+8114826889" ><button type="button" class="btn btn-danger" style="color: rgb(206, 146, 35);" >Call us</a>
+    </a>
+</form>
+    </div>
+</body>
+</html>
+{% endblock %}

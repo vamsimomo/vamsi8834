@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% extends 'testapp/demo.html' %}
+{% block body_block %}
+
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+    .grid-item {
+        background-color: rgb(29, 28, 26);
+        padding: 20px;
+    }
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+    .grid-item2 {
+        background-color: rgb(29, 28, 26);
+        padding: 20px;
+    }
+</style>
+
+<div>
+    <nav style="color: rgba(214, 151, 14, 0.829);">Sports Information</nav>
+    <img src="https://www.lpu.in/images/home-slider/slide-khelo-india-1.jpg" alt="" height="500" width="1370">
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <h1 style="color: rgb(245, 234, 234);">Neeraj Chopra Once Again Made Our Hearts Swell With Pride As He Clinched Gold At Doha Diamond League 2023.</h1>
+            <img src="https://www.lpu.in/campus_life/images/sports/neeraj.jpg" >
+        </div>
+        <div class="grid-item">
+            <h1 style="color: rgb(218, 221, 210);">A Moment Of Glory Is Here As Our Women Cricket Team Lifted The All India Inter University Championship Trophy. We Are Overjoyed By Their Success And Wish Them All The Best For The Future.</h1>
+            <img src="https://www.lpu.in/campus_life/images/sports/aiu-2023.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid-container2">
+        <div class="grid-item">
+            <h1 style="color: rgb(245, 234, 234);">LPU Student Pooja Gahlot Bagged Silver Medal At UWW U-23 World Wrestling Championships</h1>
+            <img height="350" width="670" src="https://www.lpu.in/campus_life/images/sports/pooja-gahlot.jpg" >
+        </div>
+        <div class="grid-item2">
+            <h1 style="color: rgb(218, 221, 210);">We Wholeheartedly Congratulate Our Verto And Power Wrestler, Bajrang Punia, For Winning Gold Medal For India In The Ongoing Commonwealth Games 2022 In Birmingham! After His Spectacular Performance In Tokyo Olympics 2021, He Has Yet Again Filled The Hearts Of Millions Of Indians With Pride.</h1>
+            <img src="https://www.lpu.in/campus_life/images/sports/punia.jpg" alt="">
+        </div>
+    </div>
+    
+
+    <a href="/home">
+        <button type="button" class="btn btn-success">Home Page</button>
+    </a>
+</div>
+
+{% endblock %}

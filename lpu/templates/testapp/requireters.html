@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% extends 'testapp/demo.html' %}
+{% block body_block %} 
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+    .grid-item {
+        background-color: rgb(29, 28, 26);
+        padding: 20px;
+    }
+    .navbar1{
+            color: rgb(20, 19, 19);
+            background-color: rgb(34, 167, 167);
+            size: 16px;
+            height: 30px;
+            width: 100px;
+            align-items: center;
+        }
+</style>
+<div>
+    <nav class="navbar1">Placements</nav>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h1 style="color: rgb(241, 233, 233);">LPU offers excellent placements</h1>
+            <img  width="700" height="500" src="https://qph.cf2.quoracdn.net/main-qimg-99352b1ff53515c455a1ccd18aeb7c59-lq" >
+        </div>
+
+        <div class="grid-item">
+            <h1 style="color: rgb(218, 221, 210);">How were the placements at LPU in 2022?</h1>
+            <img width="700" height="500"  src="https://images.shiksha.com/mediadata/images/articles/1676623328phpcsFDoC.jpeg" alt="">
+            
+        </div>
+    </div>
+</div>
+<title>Packages Of Previous Year Students</title>
+<div  class="container" style="background-color: blueviolet;">
+<table border="2"  style="background-color: yellow;" align="center"> 
+    <thead >
+        <th>Name</th>
+        <th>Address</th>
+        <th>Percentage</th>
+        <th>Package</th>
+    </thead>
+    <tr>
+        {% for detail in list_details %}
+    <td>{{ detail.name }}</td>
+    <td>{{ detail.add }}</td>
+    <td>{{ detail.percentage }}</td>
+    <td>rs.{{ detail.package }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+</div>
+<a href="/home">
+    <button type="button" class="btn btn-success">Home Page</button>
+</a>
+{% endblock %}
